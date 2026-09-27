@@ -1,0 +1,124 @@
+{
+  "common": {
+    "welcome": "Welcome",
+    "logout": "Logout",
+    "login": "Login",
+    "signup": "Sign Up",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  },
+  "nav": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "successStories": "Success Stories",
+    "language": "Language"
+  },
+  "home": {
+    "title": "Welcome to InnovateHub",
+    "subtitle": "Citizens can report local problems like education, health, water, and agriculture. Universities pick them up, form student teams to solve them, and industries help fund and mentor the solutions.",
+    "login": "Login",
+    "signup": "Sign Up",
+    "successStories": "Success Stories"
+  },
+  "login": {
+    "title": "Login",
+    "email": "Email",
+    "password": "Password",
+    "loggingIn": "Logging in...",
+    "noAccount": "Don't have an account?",
+    "signUpLink": "Sign Up"
+  },
+  "signup": {
+    "title": "Sign Up",
+    "name": "Name",
+    "email": "Email",
+    "password": "Password",
+    "role": "Role",
+    "citizen": "Citizen",
+    "university": "University",
+    "admin": "Admin",
+    "department": "Department (University only)",
+    "signingUp": "Signing up...",
+    "haveAccount": "Already have an account?",
+    "loginLink": "Login"
+  },
+  "citizen": {
+    "dashboard": "Citizen Dashboard",
+    "reportIssue": "Report a New Issue",
+    "myActivity": "My Activity",
+    "issuesNearYou": "Issues Near You",
+    "yourImpact": "Your Impact",
+    "photoGallery": "Photo Gallery",
+    "noIssues": "You haven't submitted any problems yet. Click \"Report a New Issue\" to get started!",
+    "reportFirst": "Report an issue with your location to see problems from your area!",
+    "noNearbyIssues": "No other issues found in your area yet. Be the first to report problems in your location!"
+  },
+  "university": {
+    "dashboard": "University Dashboard",
+    "challengeInbox": "Challenge Inbox",
+    "assignedChallenges": "Assigned Challenges",
+    "teamFormation": "Team Formation",
+    "activeProjects": "Active Projects",
+    "welcome": "Welcome",
+    "noChallenges": "No new challenges available. Check back later!",
+    "noAssigned": "No assigned challenges yet. Accept challenges from the inbox to get started!",
+    "accept": "Accept",
+    "reject": "Reject",
+    "startWork": "Start Work",
+    "markResolved": "Mark Resolved",
+    "processing": "Processing..."
+  },
+  "admin": {
+    "dashboard": "Admin Dashboard",
+    "analytics": "Analytics",
+    "totalProblems": "Total Problems Submitted",
+    "totalUpvotes": "Total Community Upvotes",
+    "problemsByCategory": "Problems by Category",
+    "problemsByStatus": "Problems by Status",
+    "noData": "No data available"
+  },
+  "reportForm": {
+    "title": "Report a New Issue",
+    "issueTitle": "Issue Title",
+    "description": "Description",
+    "location": "Location",
+    "category": "Category",
+    "photo": "Photo (optional)",
+    "uploading": "Uploading...",
+    "submit": "Submit Issue"
+  },
+  "issues": {
+    "title": "Title",
+    "description": "Description",
+    "location": "Location",
+    "category": "Category",
+    "status": "Status",
+    "submitted": "Submitted",
+    "underReview": "Under Review",
+    "assigned": "Assigned",
+    "inProgress": "In Progress",
+    "resolved": "Resolved",
+    "upvote": "Upvote",
+    "before": "Before",
+    "after": "After",
+    "resolvedOn": "Resolved on"
+  },
+  "successStories": {
+    "title": "Success Stories",
+    "subtitle": "See how communities and universities are working together to solve real problems",
+    "noStories": "No success stories yet. Problems resolved by universities will appear here!"
+  },
+  "status": {
+    "submitted": "Submitted",
+    "under_review": "Under Review",
+    "assigned": "Assigned",
+    "in_progress": "In Progress",
+    "resolved": "Resolved"
+  }
+}

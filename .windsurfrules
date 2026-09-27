@@ -1,0 +1,69 @@
+# SIH26043 — Naksha v2 (Combined)
+
+Legend: 🔴 MUST HAVE (build first) | 🟡 NICE TO HAVE (only if time left)
+
+## 1. User Roles
+- 🔴 Citizen
+- 🔴 University
+- 🔴 Admin
+- 🟡 Industry (skip for internal round — add later if selected)
+
+## 2. Citizen Side
+
+**Navbar**
+- 🔴 Website title (left)
+- 🔴 Account details (icon + name, logout)
+- 🟡 Language switcher (Hindi/English/Local Jharkhand language)
+- 🟡 Dark/Light mode
+- 🟡 Notification (bell icon)
+
+**Screens**
+- 🔴 **Report a New Issue** (button → form)
+  - Fields: Media (photo), Details (title+description), Location button, category (auto-filled)
+  - 🔴 AI duplicate-check feature runs here (shows "similar issue exists" warning)
+- 🔴 **My Activity / Submissions** — card based, shows media/text/description + progress status, click for full details
+- 🟡 **Issues Near You** — location-based feed + upvote feature
+- 🟡 **Photo Gallery (Success Stories)** — before vs after images
+- 🟡 **Your Impact** — personal stats page (how many issues resolved etc.)
+
+## 3. University Side
+
+**Navbar**
+- 🔴 Login/Signup with department selection
+
+**Screens**
+- 🔴 **Challenge Inbox** — new assigned challenges, Action Button → Accept / Reject (with reason)
+  - On Accept → **Team Formation** (assign faculty lead + students)
+- 🔴 **Assigned Challenges** — list view, click to expand full details
+- 🟡 **Active Projects** — tracking accepted challenges through to completion
+
+## 4. Admin Side (add this — currently missing from the hand-drawn version)
+
+- 🔴 Login
+- 🔴 **Analytics Dashboard**: total submissions, category-wise chart, status-wise chart
+- 🟡 District-wise breakdown, university participation stats
+
+## 5. Data Model (unchanged, still applies)
+
+**problems**: id, title, description, photo_url, location, category, status
+(submitted/under_review/assigned/in_progress/resolved), submitted_by, assigned_university,
+duplicate_of (nullable — links to original if flagged as duplicate), upvote_count, created_at
+
+**users**: id, name, role (citizen/university/admin), department (university only)
+
+**universities**: id, name, expertise_tags (array, matches categories)
+
+## 6. The 10 Categories
+Education, Healthcare, Agriculture, Water Resources, Environment, Energy,
+Urban Development, Accessibility, Public Administration, Rural Livelihoods
+
+## 7. Core Demo Journey (all 🔴 items strung together)
+Citizen reports issue → AI checks duplicate + auto-categorizes → routed to matching
+university → university accepts + forms team → status updates on citizen's My Activity
+page → admin dashboard reflects it live
+
+## 8. If Time Permits (build in this order after core works)
+1. Upvote + Issues Near You (easy, high demo impact)
+2. Photo Gallery / Success Stories (easy, great for judges)
+3. Language switcher (moderate effort, strong Jharkhand-relevance signal)
+4. Dark/Light mode, Your Impact page (lowest priority — polish only)
